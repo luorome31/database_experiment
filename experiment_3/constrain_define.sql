@@ -1,0 +1,20 @@
+
+
+-- 为SC表中的Sno设置外键约束，当S表中的记录被删除时，级联删除SC表中的对应记录
+ALTER TABLE SC
+ADD CONSTRAINT FK_Student
+FOREIGN KEY (Sno) REFERENCES S(Sno)
+ON DELETE CASCADE;
+
+-- 为SC表中的Cno设置外键约束
+ALTER TABLE SC
+ADD CONSTRAINT FK_Course
+FOREIGN KEY (Cno) REFERENCES C(Cno)
+ON DELETE RESTRICT; 
+
+
+-- 为S表添加CHECK约束，确保学生年龄小于35
+ALTER TABLE S
+ADD CONSTRAINT CK_Sage CHECK (Sage < 35);
+
+
