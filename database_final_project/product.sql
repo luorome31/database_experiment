@@ -1,0 +1,14 @@
+-- 获取特定类别下的产品列表
+SELECT PRODUCTID, NAME, DESCN AS description, CATEGORY AS categoryId
+FROM PRODUCT
+WHERE CATEGORY = 'CAT001';
+
+-- 获取特定产品ID的产品信息
+SELECT PRODUCTID, NAME, DESCN AS description, CATEGORY AS categoryId
+FROM PRODUCT
+WHERE PRODUCTID = 'P001';
+
+-- 搜索产品列表中包含关键词的产品
+SELECT PRODUCTID, NAME, DESCN AS description, CATEGORY AS categoryId
+FROM PRODUCT
+WHERE LOWER(NAME) LIKE '%dog%';

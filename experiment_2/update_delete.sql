@@ -35,6 +35,7 @@ SET grade = grade * 1.1
 WHERE Cno IN (SELECT Cno FROM C WHERE Cname = '数据结构');
 
 
+
 DELETE SC
 FROM SC
 JOIN (

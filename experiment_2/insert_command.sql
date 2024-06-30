@@ -1,5 +1,5 @@
 -- -- 插入学生数据到表S
--- INSERT INTO S (Sno, Sname, Ssex, Sage, sdept) VALUES ('8209220140', '王多鱼', '男', 20, 'CS');
+INSERT INTO S (Sno, Sname, Ssex, Sage, sdept) VALUES ('8209220140', '王多鱼', '男', 20, 'CS');
 
 -- -- 插入课程数据到表C
 -- INSERT INTO C (Cno, Cname, Cpno, ccredit) VALUES (1, '数据库系统', NULL, 4);
@@ -8,9 +8,10 @@
 
 
 
+INSERT INTO S (Sno, Sname, Ssex, Sage, sdept)
+VALUES ('2007001005', '王多鱼', '男', 20, 'CS');
+INSERT INTO SC VALUES('2007001005',c123,NULL);
 
--- INSERT INTO C VALUES(5,'数据结构',NULL,4);
--- INSERT INTO SC VALUES('8209220140',5,90);
 -- INSERT INTO SC VALUES('8209220141',5,80);
 -- INSERT INTO SC VALUES('8209220142',5,70);
 -- INSERT INTO SC VALUES('8209220143',5,60);
